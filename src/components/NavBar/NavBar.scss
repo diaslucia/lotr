@@ -13,6 +13,7 @@
   width: 100%;
   height: 190px;
   position: fixed;
+  z-index: 999;
   .navBar_list {
     @include flex(row, space-around, center);
     margin: 0;

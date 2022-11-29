@@ -1,7 +1,17 @@
-import React from 'react';
+/* Styles */
+import './MovieCard.scss';
 
-const MovieCard = () => {
-  return <div>MovieCard</div>;
+const MovieCard = ({ item, handlePopup }) => {
+  return (
+    <div className='movieCard' onClick={() => handlePopup(item)}>
+      <img
+        className='movieCard_img'
+        src={`./src/assets/${item.name}.jpg`}
+        alt={item.name}
+      />
+      <h2 className='movieCard_title'>{item.name}</h2>
+    </div>
+  );
 };
 
 export default MovieCard;

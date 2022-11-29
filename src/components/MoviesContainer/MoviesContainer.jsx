@@ -1,5 +1,5 @@
 /* Styles */
-import './MoviesContainer';
+import './MoviesContainer.scss';
 
 /* Hooks */
 import { useEffect, useState } from 'react';

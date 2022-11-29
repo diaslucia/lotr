@@ -3,7 +3,7 @@
 .moviesContainer {
   width: 100%;
   padding-top: 150px;
-  min-height: 800px;
+  min-height: calc(100vh - 150px);
   @include flex(column, center, center);
   background-image: url('./src/assets/wallpaper.jpg');
   background-repeat: repeat;

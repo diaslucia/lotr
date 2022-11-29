@@ -1,0 +1,76 @@
+@import '../../utils/sass/theme.scss';
+
+.home {
+  position: relative;
+  min-height: 100vh;
+  .home_img {
+    position: absolute;
+    z-index: 99;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 400px;
+  }
+  .home_div {
+    @include flex(column, center, center);
+    position: absolute;
+    z-index: 99;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    height: 400px;
+    .home_title {
+      @include subtitleFont(50px);
+      color: $gold;
+      margin: 0;
+      line-height: 45px;
+    }
+    .home_subtitle {
+      font-size: 30px;
+      line-height: 25px;
+    }
+  }
+}
+
+/* Keyframes to rotate image */
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 50s linear infinite;
+  -moz-animation: rotating 50s linear infinite;
+  -ms-animation: rotating 50s linear infinite;
+  -o-animation: rotating 50s linear infinite;
+  animation: rotating 50s linear infinite;
+}
