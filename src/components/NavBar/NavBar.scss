@@ -5,10 +5,11 @@
   background: linear-gradient(
     180deg,
     rgba(235, 235, 235, 1) 0%,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 28%,
-    rgba(0, 0, 0, 0) 100%
+    rgba(15, 15, 15, 1) 0%,
+    rgba(15, 15, 15, 1) 28%,
+    rgba(15, 15, 15, 0) 100%
   );
+  max-width: 1200px;
   width: 100%;
   height: 190px;
   position: fixed;

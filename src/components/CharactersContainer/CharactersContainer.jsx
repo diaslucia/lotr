@@ -15,18 +15,23 @@ const CharactersContainer = () => {
     fetchData();
   }, []);
 
-  // prettier-ignore
   const fetchData = async () => {
     const headers = {
-      'Accept': 'application/json',
-      'Authorization': `Bearer ${import.meta.env.VITE_API_KEY}`
-    }
-    const rawCharacters = await fetch('https://the-one-api.dev/v2/character?page=1', {
-      headers: headers
+      Accept: 'application/json',
+      Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
+    };
+    fetch('https://the-one-api.dev/v2/character', {
+      headers: headers,
     })
-    const resultCharacters = await rawCharacters.json();
-    setCharacters(resultCharacters.docs);
-    
+      .then(response => {
+        return response.json();
+      })
+      .then(responseJson => {
+        setCharacters(responseJson.docs);
+      })
+      .catch(error => {
+        console.log(error);
+      });
   };
 
   return (

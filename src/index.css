@@ -3,10 +3,12 @@
   color-scheme: light dark;
 }
 
+html,
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-color: #0f0f0f;
+  max-width: 1200px;
 }
 
 a {

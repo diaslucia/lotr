@@ -1,8 +1,14 @@
+@import '../../utils/sass/theme.scss';
+
 .charactersContainer {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 150px;
   min-height: 800px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(column, center, center);
+  background-image: url('./src/assets/wallpaper.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+  .charactersContainer_pagination {
+    @include flex(column, center, center);
+  }
 }
