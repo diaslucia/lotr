@@ -1,0 +1,40 @@
+@import '../../utils/sass/theme.scss';
+
+.pagination {
+  @include flex(row, center, flex-end);
+  font-size: 18px;
+  color: $white;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  background-color: $black;
+  background: linear-gradient(
+    360deg,
+    rgba(235, 235, 235, 1) 0%,
+    rgba(15, 15, 15, 1) 0%,
+    rgba(15, 15, 15, 0.5) 38%,
+    rgba(15, 15, 15, 0) 100%
+  );
+  height: 100px;
+  margin: 0;
+  padding-bottom: 20px;
+  li {
+    list-style-type: none;
+    margin: 0 5px;
+    a {
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
+  .active {
+    border: 1px solid $gold;
+    border-radius: 100%;
+    text-align: center;
+    width: 22px;
+    height: 22px;
+    color: $gold;
+  }
+}

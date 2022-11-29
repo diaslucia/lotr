@@ -1,0 +1,6 @@
+.characterList_list {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: space-evenly;
+  grid-gap: 10px;
+}
