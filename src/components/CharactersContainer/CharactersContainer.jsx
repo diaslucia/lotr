@@ -1,12 +1,12 @@
 /* Styles */
-import './CharactersContainer';
+import './CharactersContainer.scss';
 
 /* Hooks */
 import { useEffect, useState } from 'react';
 
 /* Components */
-import CharacterCard from './CharacterCard/CharacterCard';
 import Spinner from '../Spinner/Spinner';
+import CharacterList from './CharacterList/CharacterList';
 
 const CharactersContainer = () => {
   const [characters, setCharacters] = useState();
@@ -19,18 +19,19 @@ const CharactersContainer = () => {
   const fetchData = async () => {
     const headers = {
       'Accept': 'application/json',
-      'Authorization': 'Bearer zq5K9nI1r0TxI0sgyIpx'
+      'Authorization': `Bearer ${import.meta.env.VITE_API_KEY}`
     }
     const rawCharacters = await fetch('https://the-one-api.dev/v2/character?page=1', {
       headers: headers
     })
     const resultCharacters = await rawCharacters.json();
-    setCharacters(resultCharacters);
+    setCharacters(resultCharacters.docs);
+    
   };
 
   return (
     <div className='charactersContainer'>
-      {characters ? <CharacterCard characters={characters} /> : <Spinner />}
+      {characters ? <CharacterList characters={characters} /> : <Spinner />}
     </div>
   );
 };
