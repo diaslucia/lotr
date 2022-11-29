@@ -1,0 +1,29 @@
+@import '../../utils/sass/theme.scss';
+
+.navBar {
+  background-color: $black;
+  background: linear-gradient(
+    180deg,
+    rgba(235, 235, 235, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 28%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 100%;
+  height: 190px;
+  position: fixed;
+  .navBar_list {
+    @include flex(row, space-around, center);
+    margin: 0;
+    height: 100px;
+    list-style: none;
+    li {
+      @include titleFont(25px);
+      text-decoration: none;
+      color: $white;
+    }
+  }
+  .navBar_img {
+    width: 180px;
+  }
+}

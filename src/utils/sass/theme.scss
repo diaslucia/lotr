@@ -1,0 +1,31 @@
+// Colors
+$black: #0f0f0f;
+$white: #f8f8f8;
+
+// Media query
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1366px;
+
+// Flex
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin titleFont($size) {
+  font-family: 'Almendra', serif;
+  font-size: $size;
+}
+
+@mixin subtitleFont($size) {
+  font-family: 'Almendra SC', serif;
+  font-size: $size;
+}
+
+@mixin textFont($size) {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: $size;
+}
