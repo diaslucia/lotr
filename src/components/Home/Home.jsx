@@ -1,4 +1,7 @@
+/* Styles */
 import './Home';
+
+/* Components */
 import Banner from './components/Banner/Banner';
 
 const Home = () => {

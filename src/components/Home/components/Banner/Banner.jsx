@@ -1,3 +1,4 @@
+/* Styles & Images */
 import './Banner.scss';
 import BannerImg from '../../../../assets/banner.jpg';
 
