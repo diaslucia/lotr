@@ -19,12 +19,11 @@ const CharactersContainer = () => {
   }, []);
 
   const fetchData = async () => {
-    const headers = {
-      Accept: 'application/json',
-      Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
-    };
     fetch('https://the-one-api.dev/v2/character', {
-      headers: headers,
+      headers: {
+        Accept: 'application/json',
+        Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
+      },
     })
       .then(response => {
         return response.json();

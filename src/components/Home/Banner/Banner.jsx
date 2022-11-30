@@ -1,6 +1,6 @@
 /* Styles & Images */
 import './Banner.scss';
-import BannerImg from '../../../../assets/banner.jpg';
+import BannerImg from '../../../assets/images/banner.jpg';
 
 const Banner = () => {
   return (

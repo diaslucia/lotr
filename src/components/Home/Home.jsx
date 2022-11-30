@@ -1,12 +1,12 @@
 /* Styles & Images*/
 import './Home.scss';
-import LogoRound from '../../assets/logo-round.png';
-import img1 from '../../assets/card1.jpg';
-import img2 from '../../assets/card2.jpg';
+import LogoRound from '../../assets/images/logo-round.png';
+import img1 from '../../assets/images/card1.jpg';
+import img2 from '../../assets/images/card2.jpg';
 
 /* Components */
-import Banner from './components/Banner/Banner';
-import CardHome from './components/CardHome/CardHome';
+import Banner from './Banner/Banner';
+import CardHome from './CardHome/CardHome';
 import Footer from '../Footer/Footer';
 
 /* Animations */

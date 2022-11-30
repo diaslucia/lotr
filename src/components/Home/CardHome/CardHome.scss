@@ -1,4 +1,4 @@
-@import '../../../../utils/sass/theme.scss';
+@import '../../../utils/sass/theme.scss';
 
 .cardHome {
   position: relative;
@@ -9,9 +9,6 @@
   }
   .cardHome_img {
     width: 500px;
-    filter: sepia(55%);
-    -webkit-filter: sepia(55%);
-    -moz-filter: sepia(55%);
   }
 
   .cardHome_div {
@@ -28,8 +25,10 @@
       @include subtitleFont(30px);
       background-color: $white;
       text-align: center;
-      color: $black;
+      color: $gold;
       margin: 0;
+      font-weight: 300;
+      letter-spacing: 2px;
     }
   }
 }

@@ -3,7 +3,7 @@ import './MoviesList.scss';
 
 /* Components */
 import MovieCard from '../MovieCard/MovieCard';
-import PopUp from '../../PopUp/PopUp';
+import PopUp from '../PopUp/PopUp';
 
 /* Hooks */
 import { useState } from 'react';

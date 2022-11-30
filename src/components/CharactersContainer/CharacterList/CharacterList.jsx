@@ -3,7 +3,7 @@ import './CharacterList.scss';
 
 /* Components */
 import CharacterCard from '../CharacterCard/CharacterCard';
-import Pagination from '../../Pagination/Pagination';
+import Pagination from '../Pagination/Pagination';
 
 /* Hooks */
 import { useState } from 'react';

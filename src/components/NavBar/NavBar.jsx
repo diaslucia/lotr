@@ -1,6 +1,6 @@
 /* Styles & Images*/
 import './NavBar.scss';
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/images/logo.png';
 
 /* React Router Dom */
 import { Link } from 'react-router-dom';
