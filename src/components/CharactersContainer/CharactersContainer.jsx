@@ -8,6 +8,9 @@ import { useEffect, useState } from 'react';
 import Spinner from '../Spinner/Spinner';
 import CharacterList from './CharacterList/CharacterList';
 
+/* Animations */
+import { motion } from 'framer-motion';
+
 const CharactersContainer = () => {
   const [characters, setCharacters] = useState();
 
@@ -35,9 +38,14 @@ const CharactersContainer = () => {
   };
 
   return (
-    <div className='charactersContainer'>
+    <motion.div
+      className='charactersContainer'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       {characters ? <CharacterList characters={characters} /> : <Spinner />}
-    </div>
+    </motion.div>
   );
 };
 

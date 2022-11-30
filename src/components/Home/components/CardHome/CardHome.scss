@@ -1,0 +1,35 @@
+@import '../../../../utils/sass/theme.scss';
+
+.cardHome {
+  position: relative;
+  transition: all 2s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.02, 1.02);
+  }
+  .cardHome_img {
+    width: 500px;
+    filter: sepia(55%);
+    -webkit-filter: sepia(55%);
+    -moz-filter: sepia(55%);
+  }
+
+  .cardHome_div {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    transform: skew(20deg);
+    width: 50%;
+    .cardHome_title {
+      display: block;
+      @include subtitleFont(30px);
+      background-color: $white;
+      text-align: center;
+      color: $black;
+      margin: 0;
+    }
+  }
+}

@@ -8,6 +8,9 @@ import MoviesList from './MovieList/MoviesList';
 /* Components */
 import Spinner from '../Spinner/Spinner';
 
+/* Animations */
+import { motion } from 'framer-motion';
+
 const MoviesContainer = () => {
   const [movies, setMovies] = useState();
 
@@ -35,9 +38,14 @@ const MoviesContainer = () => {
   };
 
   return (
-    <div className='moviesContainer'>
+    <motion.div
+      className='moviesContainer'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       {movies ? <MoviesList movies={movies} /> : <Spinner />}
-    </div>
+    </motion.div>
   );
 };
 

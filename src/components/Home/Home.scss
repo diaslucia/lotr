@@ -1,39 +1,45 @@
 @import '../../utils/sass/theme.scss';
 
 .home {
-  position: relative;
   min-height: 100vh;
-  .home_img {
-    position: absolute;
-    z-index: 99;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 400px;
+  .home_bannerContainer {
+    position: relative;
+    .home_img {
+      position: absolute;
+      z-index: 99;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 400px;
+    }
+    .home_div {
+      @include flex(column, center, center);
+      position: absolute;
+      z-index: 99;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+      height: 400px;
+      .home_title {
+        @include subtitleFont(50px);
+        color: $gold;
+        margin: 0;
+        line-height: 45px;
+      }
+      .home_subtitle {
+        font-size: 30px;
+        line-height: 25px;
+      }
+    }
   }
-  .home_div {
-    @include flex(column, center, center);
-    position: absolute;
-    z-index: 99;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    height: 400px;
-    .home_title {
-      @include subtitleFont(50px);
-      color: $gold;
-      margin: 0;
-      line-height: 45px;
-    }
-    .home_subtitle {
-      font-size: 30px;
-      line-height: 25px;
-    }
+  .home_cardsContainer {
+    @include flex(row, space-around, center);
+    padding: 40px 0;
   }
 }
 
