@@ -12,7 +12,7 @@ const PopUp = ({ popup, itemDetail, setPopup }) => {
           <div className='popup_card'>
             <img
               className='popup_img'
-              src={`./src/assets/${itemDetail?.name}.jpg`}
+              src={`./src/assets/images/${itemDetail?.name}.jpg`}
               alt={itemDetail?.name}
             />
             <div className='popup_div'>

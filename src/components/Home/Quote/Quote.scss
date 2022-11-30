@@ -1,0 +1,26 @@
+@import '../../../utils/sass/theme.scss';
+
+.quote {
+  @include flex(column, center, center);
+  height: 200px;
+  background-image: url('./src/assets/images/quotes.png');
+  background-repeat: repeat;
+  background-size: contain;
+  .quote_quote {
+    @include quoteFont(24px);
+    color: $white;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    width: 500px;
+  }
+
+  .quote_name {
+    @include quoteFont(24px);
+    color: $white;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    padding-left: 50px;
+  }
+}

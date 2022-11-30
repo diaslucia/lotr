@@ -28,6 +28,11 @@ $desktop: 1366px;
   font-size: $size;
 }
 
+@mixin quoteFont($size) {
+  font-family: 'Caveat', cursive;
+  font-size: $size;
+}
+
 @mixin textFont($size) {
   font-family: 'Roboto Flex', sans-serif;
   font-size: $size;
