@@ -24,9 +24,6 @@ This website was built with the Lord of the Rings API.
 - [![React][react.js]][react-url]
 - [![Sass][sass]][sass-url]
 
-<br />
-<p align="right">(<a href="#readme-top">To top</a>)</p>
-
 ## 🚀 Ejecution
 
 Steps to install and run the project:
@@ -53,9 +50,6 @@ Steps to install and run the project:
    ```sh
    npm run dev
    ```
-
-<br/>
-<p align="right">(<a href="#readme-top">To top</a>)</p>
 
 ## 📂 Structure
 
@@ -86,8 +80,6 @@ src/
 ┃ ┗ sass/
 ```
 
-<p align="right">(<a href="#readme-top">to Top</a>)</p>
-
 ## 🛠 Libraries
 
 **[Framer-motion](https://www.framer.com/motion/)**: to animate components.
@@ -100,7 +92,7 @@ src/
 
 **[React Spinners](https://www.davidhu.io/react-spinners/)**: to display spinners while we wait for the API response.
 
-<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+<p align="right">(<a href="#readme-top">to Top</a>)</p>
 
 [react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [react-url]: https://reactjs.org/
