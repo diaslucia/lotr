@@ -11,7 +11,7 @@
 </div>
 
 <p align="center">
-  <img src="" width="700" align=center />
+  <img src="src/assets/gif/gif.gif" width="700" align=center />
 </p>
 
 ## 🔎 About
