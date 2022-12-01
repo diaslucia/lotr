@@ -10,7 +10,6 @@
   .cardHome_img {
     width: 500px;
   }
-
   .cardHome_div {
     position: absolute;
     margin-left: auto;
@@ -29,6 +28,29 @@
       margin: 0;
       font-weight: 300;
       letter-spacing: 2px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cardHome {
+    @include flex(column, center, center);
+    margin-bottom: 50px;
+    .cardHome_img {
+      width: 80%;
+    }
+    .cardHome_div {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      bottom: -20px;
+      transform: skew(20deg);
+      width: 50%;
+      .cardHome_title {
+        @include subtitleFont(25px);
+      }
     }
   }
 }

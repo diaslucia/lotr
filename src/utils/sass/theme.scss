@@ -5,11 +5,6 @@ $gold: #cd9b00;
 $brown: #916c39;
 $gray: rgb(75, 75, 75);
 
-// Media query
-$tablet: 768px;
-$laptop: 1024px;
-$desktop: 1366px;
-
 // Flex
 @mixin flex($direction, $justify, $align) {
   display: flex;

@@ -4,3 +4,15 @@
   justify-content: space-evenly;
   grid-gap: 10px;
 }
+.anchor {
+  display: block;
+  position: relative;
+  top: -180px;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .characterList_list {
+    grid-template-columns: repeat(1, 200px);
+  }
+}

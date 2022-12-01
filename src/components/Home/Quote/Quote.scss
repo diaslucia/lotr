@@ -4,8 +4,9 @@
   @include flex(column, center, center);
   height: 200px;
   background-image: url('./src/assets/images/quotes.png');
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   .quote_quote {
     @include quoteFont(24px);
     color: $white;
@@ -22,5 +23,20 @@
     font-weight: normal;
     margin: 0;
     padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .quote {
+    height: auto;
+    margin: 200px 0 50px 0;
+    background-image: url('./src/assets/images/quotes2.png');
+    .quote_quote {
+      @include quoteFont(20px);
+      width: 80%;
+    }
+    .quote_name {
+      @include quoteFont(18px);
+    }
   }
 }

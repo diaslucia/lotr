@@ -8,7 +8,7 @@ import img2 from '../../assets/images/card2.jpg';
 import Banner from './Banner/Banner';
 import CardHome from './CardHome/CardHome';
 import Footer from '../Footer/Footer';
-import Quote from './Quote/Quote';
+import QuoteContainer from './QuoteContainer/QuoteContainer';
 
 /* Animations */
 import { motion } from 'framer-motion';
@@ -34,7 +34,7 @@ const Home = () => {
           <p className='home_title home_subtitle'>Earth</p>
         </div>
       </div>
-      <Quote />
+      <QuoteContainer />
       <div className='home_cardsContainer'>
         <CardHome img={img1} text='Movies' link='/movies' />
         <CardHome img={img2} text='Characters' link='/characters' />

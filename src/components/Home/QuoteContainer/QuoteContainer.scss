@@ -1,0 +1,14 @@
+@import '../../../utils/sass/theme.scss';
+
+.quote_spinnerContainer {
+  @include flex(row, center, center);
+  margin-top: 80px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .quote_spinnerContainer {
+    margin-top: 150px;
+    height: auto;
+  }
+}

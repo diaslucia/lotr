@@ -9,6 +9,7 @@ body {
   padding: 0;
   background-color: #0f0f0f;
   max-width: 1200px;
+  scroll-behavior: smooth;
 }
 
 a {

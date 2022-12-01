@@ -80,3 +80,32 @@
   -o-animation: rotating 50s linear infinite;
   animation: rotating 50s linear infinite;
 }
+
+@media only screen and (max-width: 768px) {
+  .home {
+    .home_bannerContainer {
+      .home_img {
+        left: 0;
+        right: 0;
+        bottom: -150px;
+        height: 250px;
+      }
+      .home_div {
+        bottom: -150px;
+        height: 250px;
+        .home_title {
+          @include subtitleFont(25px);
+          line-height: 25px;
+        }
+        .home_subtitle {
+          font-size: 25px;
+          line-height: 20px;
+        }
+      }
+    }
+    .home_cardsContainer {
+      @include flex(column, center, center);
+      padding: 20px 0;
+    }
+  }
+}

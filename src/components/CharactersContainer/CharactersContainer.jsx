@@ -43,7 +43,13 @@ const CharactersContainer = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      {characters ? <CharacterList characters={characters} /> : <Spinner />}
+      {characters ? (
+        <CharacterList characters={characters} />
+      ) : (
+        <div className='charactersContainer_spinner'>
+          <Spinner />
+        </div>
+      )}
     </motion.div>
   );
 };
