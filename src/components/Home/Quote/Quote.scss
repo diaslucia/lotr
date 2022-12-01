@@ -3,7 +3,7 @@
 .quote {
   @include flex(column, center, center);
   height: 200px;
-  background-image: url('./src/assets/images/quotes.png');
+  background-image: url('./images/quotes.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -30,7 +30,7 @@
   .quote {
     height: auto;
     margin: 200px 0 50px 0;
-    background-image: url('./src/assets/images/quotes2.png');
+    background-image: url('./images/quotes2.png');
     .quote_quote {
       @include quoteFont(20px);
       width: 80%;
