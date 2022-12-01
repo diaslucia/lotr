@@ -7,7 +7,7 @@
   </a>
 
   <h3 align="center">Lord of the Rings</h3>
-
+   <a href="https://lotrtheone.netlify.app/">View Demo</a>
 </div>
 
 <p align="center">

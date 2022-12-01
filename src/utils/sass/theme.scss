@@ -13,6 +13,7 @@ $gray: rgb(75, 75, 75);
   align-items: $align;
 }
 
+// Fonts
 @mixin titleFont($size) {
   font-family: 'Almendra', serif;
   font-size: $size;
